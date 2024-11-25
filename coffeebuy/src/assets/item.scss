@@ -1,0 +1,88 @@
+.item {
+    border-radius: 50px;
+    background-color: #F2F2F2;
+    width: 380px;
+    height: 675px;
+    position: relative;
+    &__main{
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 85px;
+        &__img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__name{
+            font-size: 20px;
+            color: #282828;
+        }
+        &__weight{
+            text-align: center;
+        }
+        &__price{
+            margin-left: 17.5px;
+            margin-right: 17.5px;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            &__old{
+                color: red;
+                text-decoration: line-through;
+            }
+            &__new{
+                color: #282828;
+            }
+        }
+        &__quantity{
+            display: flex;
+            width: 175px;
+            height: 50px;
+            justify-content: space-between;
+            border-radius: 25px;
+            background-color: #ffffff;
+            padding-left: 22px;
+            padding-right: 22px;
+            font-weight: 600;
+            box-sizing: border-box;
+            margin-left: auto;
+            margin-right: auto;
+            button{
+                font-weight: 600;
+                background: none;
+                border: none;
+            }
+        }
+        &__add{
+            background-color: #FF9900;
+            width: 175px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+    }
+    &__sale {
+        $var: 70px;
+        position: absolute; 
+        top: 28px; 
+        right: 28px;
+        background-color: red;
+        width: $var;
+        height: $var;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+        line-height: $var;
+        color: white;
+        font-weight: bold;
+    }
+}
